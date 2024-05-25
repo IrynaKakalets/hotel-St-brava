@@ -33,7 +33,6 @@ export const RoomDetail = ({ type, price, src, description, id }) => {
   const childPrice = child ? (roomPrice + mealPrice) * 0.5 : 0;
   const total = roomPrice + mealPrice + petPrice + childPrice;
 
-
   return (
     <section className="light">
       <div className="container">
@@ -42,13 +41,13 @@ export const RoomDetail = ({ type, price, src, description, id }) => {
         </h2>
         <div className="columns-2">
           <div className="column">
-            <img src={`http://localhost:4000/assets/${src}`} alt="" />
+            <img src={`http://localhost:4001/assets/${src}`} alt="" />
             <p>{description}</p>
           </div>
           <form
             onSubmit={async (e) => {
               e.preventDefault();
-              const response = await fetch('http://localhost:4000/api/orders', {
+              const response = await fetch('http://localhost:4001/api/orders', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -95,6 +94,7 @@ export const RoomDetail = ({ type, price, src, description, id }) => {
                 type="date"
                 required
               />
+
               <label htmlFor="field2" className="field-label">
                 Počet osob:
               </label>

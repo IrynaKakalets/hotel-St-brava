@@ -1,6 +1,21 @@
 import './style.css';
 
 export const OrderRow = ({ order }) => {
+  const changeStatus = async (status) => {
+    await fetch(`http://localhost:4001/api/orders/${order.id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify([
+        {
+          op: 'replace',
+          path: '/status',
+          value: status,
+        },
+      ]),
+    });
+    window.location.reload();
+  };
+
   return (
     <tr>
       <td>{order.id}</td>
@@ -12,6 +27,22 @@ export const OrderRow = ({ order }) => {
         }
       >
         {order.status}
+        {order.status === 'new' ? (
+          <div className="status-buttons">
+            <button
+              onClick={() => changeStatus('confirmed')}
+              className="confirm-button"
+            >
+              Confirm
+            </button>
+            <button
+              onClick={() => changeStatus('rejected')}
+              className="reject-button"
+            >
+              Reject
+            </button>
+          </div>
+        ) : null}
       </td>
       <td>{order.roomId}</td>
       <td>{order.dateFrom}</td>

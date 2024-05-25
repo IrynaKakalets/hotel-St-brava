@@ -7,7 +7,7 @@ export const AdminPage = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch('http://localhost:4000/api/orders');
+      const response = await fetch('http://localhost:4001/api/orders');
       const data = await response.json();
       setOrders(data.result);
     })();

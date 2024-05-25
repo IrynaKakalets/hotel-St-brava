@@ -10,7 +10,7 @@ export const RoomList = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch('http://localhost:4000/api/stribrava');
+      const response = await fetch('http://localhost:4001/api/stribrava');
       const data = await response.json();
       setApartments(data.result);
     })();
