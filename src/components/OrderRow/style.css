@@ -1,0 +1,17 @@
+td {
+  border: 1px solid black;
+  padding: 0 5px;
+}
+
+
+.status {
+  background-color: rgb(244, 165, 165);
+}
+
+.status__confirmed {
+  background-color: rgb(177, 245, 177);
+}
+
+.status__rejected {
+  background-color: rgb(209, 173, 242)
+}

@@ -42,6 +42,7 @@ export const RoomList = () => {
           price={selectedRoom.price}
           src={selectedRoom.src}
           description={selectedRoom.description}
+          id={selectedRoom.id}
         />
       ) : null}
     </>

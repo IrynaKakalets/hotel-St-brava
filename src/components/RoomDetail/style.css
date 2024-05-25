@@ -65,3 +65,7 @@ button.wide {
   width: 100%;
   padding: 1rem;
 }
+
+h3 {
+  text-align: end;
+}
