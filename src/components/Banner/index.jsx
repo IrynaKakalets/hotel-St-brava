@@ -7,10 +7,11 @@ export const Banner = () => {
         <div className="container">
           <h1>Hotel Stříbrava</h1>
           <p className="lead">
-            Rodinný hotel v malebné krajině Ceského středohoři.
+            Rodinný hotel v malebné krajině Českého středohoří.
           </p>
         </div>
       </div>
     </div>
   );
-};
+}     
+     

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "dateFrom": "2023-11-18",
+    "dateTo": "2023-11-20",
+    "peopleCount": 2,
+    "meals": "full",
+    "pet": false,
+    "child": true,
+    "handicap": true,
+    "email": "hokusnik.pokusnik@gamil.co0m",
+    "phone": "123 456 789",
+    "totalPrice": 6400
+  },
+  {
+    "id": 1,
+    "dateFrom": "2024-05-16",
+    "dateTo": "2024-05-16",
+    "peopleCount": 2,
+    "meals": "half",
+    "pet": true,
+    "child": true,
+    "handicap": false,
+    "email": "",
+    "phone": "",
+    "totalPrice": 6600
+  },
+  {
+    "id": 2,
+    "dateFrom": "2024-05-16",
+    "dateTo": "2024-05-16",
+    "peopleCount": 2,
+    "meals": "full",
+    "pet": true,
+    "child": true,
+    "handicap": false,
+    "email": "irinakakalec@gmail.com",
+    "phone": "959387232",
+    "totalPrice": 7000
+  }
+]
